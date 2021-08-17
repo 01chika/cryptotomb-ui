@@ -2,102 +2,102 @@
     "plots": [
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 0
       },
       {
         "tombType":"tablet",
-        "image" : "public/plots/tablet.png",
+        "image" : "/plots/tablet.png",
         "id": 1
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 2
       },
       {
         "tombType":"small-monument",
-        "image" : "public/plots/small-tomb.png",
+        "image" : "/plots/small-tomb.png",
         "id": 3
       },
       {
         "tombType":"large-monument",
-        "image" : "public/plots/large-tomb.png",
+        "image" : "/plots/large-tomb.png",
         "id": 4
       },
       {
         "tombType":"medium-monument",
-        "image" : "public/plots/medium-tomb.png",        
+        "image" : "/plots/medium-tomb.png",        
         "id": 5
       },
       {
         "tombType":"tablet",
-        "image" : "public/plots/tablet.png",        
+        "image" : "/plots/tablet.png",        
         "id": 6
       },
       {
         "tombType":"small-monument",
-        "image" : "public/plots/small-tomb.png",
+        "image" : "/plots/small-tomb.png",
         "id": 7
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 8
       },
       {
         "tombType":"tablet",
-        "image" : "public/plots/tablet.png",
+        "image" : "/plots/tablet.png",
         "id": 9
       },
       { 
         "tombType":"medium-monument",
-        "image" : "public/plots/medium-tomb.png",
+        "image" : "/plots/medium-tomb.png",
         "id": 10
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 11
       },
       {
         "tombType":"large-monument",
-        "image" : "public/plots/large-tomb.png",
+        "image" : "/plots/large-tomb.png",
         "id": 12
       },
       {
         "tombType":"small-monument",
-        "image" : "public/plots/small-tomb.png",
+        "image" : "/plots/small-tomb.png",
         "id": 13
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 14
       },
       {
         "tombType":"medium-monument",
-        "image" : "public/plots/medium-tomb.png",
+        "image" : "/plots/medium-tomb.png",
         "id": 15
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 16
       },
       {
         "tombType":"tablet",
-        "image" : "public/plots/tablet.png",
+        "image" : "/plots/tablet.png",
         "id": 17
       },
       {
         "tombType":"medium-monument",
-        "image" : "public/plots/medium-tomb.png",
+        "image" : "/plots/medium-tomb.png",
         "id": 18
       },
       {
         "tombType":"obelisk",
-        "image" : "public/plots/obelisk.png",
+        "image" : "/plots/obelisk.png",
         "id": 19
       }
     ]

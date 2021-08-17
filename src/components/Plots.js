@@ -6,7 +6,7 @@ const Plots = ({plots}) => {
                     return <div className="plot-container" key={plot.id}>
                         <div className="plot-item" >
                             <img src={plot.image} alt="ahahahahahahhhah" />
-                            <h3>{`Plot ${plot.id}`}</h3>
+                            {/* <h3>{`Plot ${plot.id}`}</h3> */}
                         </div>
 
                     </div>

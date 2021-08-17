@@ -1,8 +1,8 @@
 const Wallet = () => {
     return ( 
-        <div className="ct-wallet">
+        <section className="ct-wallet">
             <h1>myCTWallet</h1>
-        </div>
+        </section>
      );
 }
  

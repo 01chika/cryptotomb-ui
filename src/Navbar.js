@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="logo">
                 <Link to="/">
-                    cryptotomb
+                    cryptotomb<span className="dot">.</span>
                 </Link>
             </div>
             <ul className="nav-dropdwon">
@@ -13,10 +13,12 @@ const Navbar = () => {
                 <li>
                     <Link to="/gallery">Gallery</Link>
                 </li>
-                <li>myCTWallet</li>
+                <li>
+                    <Link to="/wallet">myCTWallet</Link>
+                </li>
                 <li>Community</li>
             </ul>
-            <button>Claim a Plot</button>
+            <div className="claim-a-plot">Claim a Plot</div>
         </nav>
      );
 }

@@ -1,8 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false);
+
+
+    const changeBackground = ()=>{
+        if(window.scrollY >= 75){
+            setNavbar(true)
+        }else{
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener("scroll", changeBackground)
+
+
     return ( 
-        <nav className="navbar">
+        <nav className={navbar ? "navbar active" : "navbar"}>
             <div className="logo">
                 <Link to="/">
                     cryptotomb<span className="dot">.</span>

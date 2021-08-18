@@ -37,7 +37,7 @@ const Gallery = () => {
                 
             })
             
-        });
+        }, 0);
 
         return () => abortCont.abort();
 

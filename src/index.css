@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&family=Press+Start+2P&family=Sigmar+One&display=swap');
+
 
 /* base styles */
 * {
@@ -11,8 +13,11 @@
 
 body{
   color: rgb(255, 255, 255);
-  background-color: rgb(4, 4, 4);;
+  /* background-color: rgb(4, 4, 4);
+  background-image: linear-gradient(170deg, #010202, #050505, rgb(7, 7, 11)); */
 
+  background-color: rgb(4, 4, 4);
+  background-image: linear-gradient(180deg, #0d121a, #050505, rgb(10, 9, 18));
 }
 
 code {
@@ -26,15 +31,22 @@ code {
   justify-content: space-between;
   align-items: center;
   height: 7.5vh;
-  /* width: auto; */
   width: 100%;
   margin: 0;
-  padding: 30px 30px;
-  background-color: rgb(0, 0, 0);
-  position: sticky;
+  padding: 35px;
+  opacity: 100%;
   font-size: 17px;
+  position: sticky;
 
   top: 0;
+}
+
+
+.navbar.active{
+  border-bottom: 1px solid #202020;
+  background-color: rgb(4, 4, 4);
+  background-image: linear-gradient(0deg, #000000, #050505, rgb(10, 10, 12));
+
 }
 
 .logo a{
@@ -67,6 +79,10 @@ code {
   text-decoration: none;
 }
 
+.navbar .claim-a-plot{
+  position: sticky;
+
+}
 
 /* button ("Claim a Plot") style */
  .claim-a-plot{
@@ -98,7 +114,7 @@ section{
   min-height: 95vh;
   height: auto;
   padding: 50px;
-  background-color: rgb(4, 4, 4);
+  /* background-color: rgb(4, 4, 4); */
 }
 
 /* Home Section */
@@ -136,7 +152,7 @@ span.dot{
   color: #f1b503;
   font-weight: 900;
   /* padding-left: 5px; */
-  font-size: 50px;
+  /* font-size: 50px; */
 }
 .hero-paragraph{
   padding-bottom: 20px;
@@ -166,7 +182,7 @@ div.plots{
 div.plot-item{
   width: 300px;
   height: 300px;
-  margin: 10px;
+  margin: 5px 7.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,23 +196,168 @@ div.plot-item{
 
 }
 
+div.plot-item a{
+  width: 95%;
+  height: 95%;
+  /* display: block;
+  margin: auto; */
+  border-radius:7.5px;
+  color: #f1b503;
+}
+
 div.plot-item img{
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   /* display: block;
   margin: auto; */
   border-radius:7.5px;
 }
 
 div.plot-item img:hover{
-  transform: scale(1.05);
   cursor: pointer;
   box-shadow:  0 20px 50px rgba(241, 181, 3, 0.5); 
 }
 
 div.plot-item h3{
-  padding: 5px;
+  padding: 2.5px;
   text-align: center;
+  
+
+}
+
+
+/* 404 not found page */
+.not-found{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found h2{
+  font-size: 70px;
+  font-style: oblique;
+  padding: 30px;
+}
+
+.not-found p{
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+
+.not-found a{
+  color:rgba(121, 59, 121, 0.9);
+}
+
+
+/* style filter buttons */
+
+.buttons{
+  padding-bottom: 50px;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center ;
+}
+
+.buttons p{
+  font-size: 25px;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.btn-tombType{
+  padding: 10px;
+  margin: 0 5px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  outline: 1px thin rgb(0, 0, 0) ;
+}
+
+.btn-tombType:hover{
+  transform: scale(1.09);
+}
+
+.btn-tombType:focus{
+  background-color: #f1b503;
+}
+
+
+/* styling for plot details section */
+section.plot-info-section{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* min-height: 95vh; */
+  height: auto;
+  padding: 70px 0;
+}
+
+div.plot-info-details{
+  width: 100%;
+  height: 750px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-right: 1px solid rgb(255, 255, 255);
+  
+
+}
+
+div.plot-info-details div.plot-image{
+  width: 700px;
+  height: 500px;
+}
+
+div.plot-info-details h1{
+  /* margin-bottom: 400px; */
+  padding-bottom: 70px;
+  font-size: 40px;
+
+}
+
+div.plot-info-details div.plot-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ 
+}
+
+div.plot-claim-status{
+  width: 100%;
+  padding: 60px;
+  
+}
+
+div.claim-this-plot{
+  /* padding: 8px; */
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: rgb(228, 228, 228);
+  background-color: rgb(62, 14, 111);
+  transition: all 200ms ease;
+  font-weight: 600;
+}
+
+.highlighted-plot{
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMjAwMTA5MDQvL0VOIgogICAgICAgICAgICAgICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+Cgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICB3aWR0aD0iMWluIiBoZWlnaHQ9IjAuNWluIgogICAgIHZpZXdCb3g9IjAgMCAzMDAgMTUwIj4KICA8cGF0aAogICAgICAgIGZpbGw9IiNmZmUwMDAiIHN0cm9rZT0ibm9uZSIKICAgICAgICBkPSJNIDEyLjAwLDQ4LjAwCiAgICAgICAgICAgQyAxMi4wMCw1MC4wOSAxMS43OSw1NC45OSAxMi42MCw1Ni43MgogICAgICAgICAgICAgMTUuNTksNjMuMTggMjYuMDksNTYuNjQgMzMuMDAsNjMuMDAKICAgICAgICAgICAgIDMwLjg0LDYzLjE4IDIzLjA1LDYzLjg3IDIxLjgwLDY1LjAyCiAgICAgICAgICAgICAxOC4wMiw2Ny44OCAyMS4yOSw3Ni4zNSAyMS44MCw4MC4wMAogICAgICAgICAgICAgMjEuODAsODAuMDAgMjEuODAsODYuMDAgMjEuODAsODYuMDAKICAgICAgICAgICAgIDIxLjgwLDg2LjAwIDQwLjAwLDg3LjAwIDQwLjAwLDg3LjAwCiAgICAgICAgICAgICAzOS45Myw4OC44OCA0MC4wNiw5MS4wNCAzOC45OCw5Mi42OQogICAgICAgICAgICAgMzcuNTEsOTQuOTMgMzUuMTUsOTQuNzUgMzIuNTksOTYuMjAKICAgICAgICAgICAgIDI4LjMzLDk4LjYxIDI2Ljg3LDEwMi4yMiAyNy4zNCwxMDcuMDAKICAgICAgICAgICAgIDI3LjM0LDEwNy4wMCAzMC4wMiwxMjMuNDEgMzAuMDIsMTIzLjQxCiAgICAgICAgICAgICAzMS44MiwxMjUuNzUgNDAuMDEsMTI3Ljk1IDQzLjAwLDEyOC4wMAogICAgICAgICAgICAgNDMuMDAsMTI4LjAwIDg3LjAwLDEyOC4wMCA4Ny4wMCwxMjguMDAKICAgICAgICAgICAgIDg4LjA4LDEyMS41NiA5MS4xNiwxMjEuODAgOTcuMDAsMTIyLjA0CiAgICAgICAgICAgICA5Ny4wMCwxMjIuMDQgMTA5LjAwLDEyMy4wMCAxMDkuMDAsMTIzLjAwCiAgICAgICAgICAgICAxMDkuMDAsMTIzLjAwIDEyOC4wMCwxMjMuMDAgMTI4LjAwLDEyMy4wMAogICAgICAgICAgICAgMTI4LjAwLDEyMy4wMCAxODIuMDAsMTIyLjAwIDE4Mi4wMCwxMjIuMDAKICAgICAgICAgICAgIDE5NC41OCwxMjEuOTcgMTg4LjQyLDExOS4wMyAyMDEuMDAsMTE5LjAwCiAgICAgICAgICAgICAyMDEuMDAsMTE5LjAwIDI0My4wMCwxMTkuMDAgMjQzLjAwLDExOS4wMAogICAgICAgICAgICAgMjQzLjAwLDExOS4wMCAyNTguMDAsMTE4LjAwIDI1OC4wMCwxMTguMDAKICAgICAgICAgICAgIDI1OS41MywxMDkuMTAgMjY2LjAxLDExMy4zNyAyNzAuNDAsMTA5LjE1CiAgICAgICAgICAgICAyNzIuNjEsMTA3LjAzIDI3Mi4zMCwxMDAuODUgMjcyLjAwLDk4LjAwCiAgICAgICAgICAgICAyNzIuMDAsOTguMDAgMjgwLjAwLDk3LjAwIDI4MC4wMCw5Ny4wMAogICAgICAgICAgICAgMjgwLjAwLDk0LjEwIDI4MC4yNiw4OC41NSAyNzkuMjYsODYuMDIKICAgICAgICAgICAgIDI3Ni40OSw3OC45OCAyNjQuNjMsNzYuODggMjU4LjAwLDc2LjAwCiAgICAgICAgICAgICAyNjUuMTUsNjkuMTkgMjc2LjQwLDczLjAzIDI3NC44NSw2Mi4wNAogICAgICAgICAgICAgMjc0LjQ3LDU5LjM1IDI3My43Myw1OC44NSAyNzIuMDAsNTcuMDAKICAgICAgICAgICAgIDI4MS42OCw1My43NyAyODEuMDAsNTQuMjggMjgxLjAwLDQ0LjAwCiAgICAgICAgICAgICAyODEuMDAsNDQuMDAgMjU4LjAwLDQyLjM4IDI1OC4wMCw0Mi4zOAogICAgICAgICAgICAgMjUwLjAwLDQwLjg0IDI1MS40OCwzOC4wMyAyMzUuMDAsMzguMDAKICAgICAgICAgICAgIDIzNS4wMCwzOC4wMCAxODkuMDAsMzkuMDAgMTg5LjAwLDM5LjAwCiAgICAgICAgICAgICAxODkuMDAsMzkuMDAgMTc3LjAwLDM5LjgyIDE3Ny4wMCwzOS44MgogICAgICAgICAgICAgMTc3LjAwLDM5LjgyIDE1OS4wMCwzOC4wMCAxNTkuMDAsMzguMDAKICAgICAgICAgICAgIDE1OS4wMCwzOC4wMCAxMjguMDAsMzguMDAgMTI4LjAwLDM4LjAwCiAgICAgICAgICAgICAxMTYuOTAsMzguMDIgMTIwLjE2LDM5LjQwIDExMy4wMCw0MC42NwogICAgICAgICAgICAgMTEzLjAwLDQwLjY3IDk3LjAwLDQyLjE3IDk3LjAwLDQyLjE3CiAgICAgICAgICAgICA5Ny4wMCw0Mi4xNyA4Ny4wMCw0My44MyA4Ny4wMCw0My44MwogICAgICAgICAgICAgODcuMDAsNDMuODMgNTcuMDAsNDUuMDAgNTcuMDAsNDUuMDAKICAgICAgICAgICAgIDU3LjAwLDQ1LjAwIDMyLjAwLDQ4LjAwIDMyLjAwLDQ4LjAwCiAgICAgICAgICAgICAzMi4wMCw0OC4wMCAxMi4wMCw0OC4wMCAxMi4wMCw0OC4wMCBaIiAvPgo8L3N2Zz4K');
+  background-position: 50% 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000000;
+  font-family: 'Permanent Marker', cursive;
   
 
 }

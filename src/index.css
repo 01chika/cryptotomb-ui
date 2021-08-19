@@ -287,7 +287,7 @@ div.plot-item h3{
 
 
 /* styling for plot details section */
-section.plot-info-section{
+section#free.plot-info-section{
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -306,7 +306,6 @@ div.plot-info-details{
   padding: 30px;
   border-right: 1px solid rgb(255, 255, 255);
   
-
 }
 
 div.plot-info-details div.plot-image{

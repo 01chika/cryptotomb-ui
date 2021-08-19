@@ -18,22 +18,12 @@ const PlotDetail = () => {
 
 
     return ( 
-        <section className="plot-info-section">
+        <div>
             {error && <div className="fetch-error">could not fetch the data for that resource</div>}
+            {isPending && <div>Loading...</div>}
+            {plotIsMinted ? "</> ": <PlotFree plot={plot} />}
 
-            {plot && <div className="plot-info-details">
-                <h1 ><span className="highlighted-plot">{`Plot #${plot.id}`}</span></h1>
-
-                <div className="plot-image">
-                    <img src={plot.image} alt="" />
-                </div>
-            </div>
-            }
-
-            <div className="plot-claim-status">
-                {plotIsMinted ? "</> ": <PlotFree />}
-            </div>
-        </section>
+        </div>
      );
      
 }

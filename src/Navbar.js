@@ -32,6 +32,7 @@ const Navbar = () => {
                     <Link to="/wallet">myCTWallet</Link>
                 </li>
                 <li>Community</li>
+                <li>FAQ</li>
             </ul>
             <div className="claim-a-plot">Claim a Plot</div>
         </nav>

@@ -4,10 +4,10 @@ import { useSpring, animated } from "react-spring";
 const MintEpitaph = ({plot, showMintEpitaph, setShowMintEpitaph}) => {
 
     const modalRef = useRef()
-    
+
     const animation = useSpring({
         config: {
-          duration: 250
+          duration: 300
         },
         opacity: showMintEpitaph ? 1 : 0,
         transform: showMintEpitaph ? `translateX(0%)` : `translateX(-100%)`

@@ -24,7 +24,9 @@ const Navbar = () => {
                 </Link>
             </div>
             <ul className="nav-dropdwon">
-                <li>Overview</li>
+                <li>
+                    <Link to="/">Overview</Link>
+                </li>
                 <li>
                     <Link to="/gallery">Gallery</Link>
                 </li>
